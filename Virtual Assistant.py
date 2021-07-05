@@ -10,13 +10,13 @@ def speak (text):                                #converts given text to speech
     tts.save(filename)
     playsound.playsound(filename)
 
-def get_audio():                               #converts given speech to text
+def get_audio():                               #converts given speech to text 
     r = sr.Recognizer()
     with sr.Microphone()as source:
       audio = r.listen(source)
       said =""
 
-      try:
+      try:                                      #error recognition
         said = r.recognize_google(audio)
         print(said)
       except Exception as e:
