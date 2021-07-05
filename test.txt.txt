@@ -1,1 +1,1 @@
-coz why not! first commit
+Hello! this is my first commit for the Virtual Assistant Python project.   
