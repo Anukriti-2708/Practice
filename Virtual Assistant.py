@@ -10,7 +10,7 @@ def speak (text):                                #converts given text to speech
     tts.save(filename)
     playsound.playsound(filename)
 
-def get_audio():
+def get_audio():                               #converts given speech to text
     r = sr.Recognizer()
     with sr.Microphone()as source:
       audio = r.listen(source)
