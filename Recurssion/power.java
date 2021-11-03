@@ -9,7 +9,7 @@ public class power {
        int xn= square(x,n);
 
       System.out.println(xn);
-   
+       sn.close();
     }
     public static int square(int x,int n){
         if(n==0){
