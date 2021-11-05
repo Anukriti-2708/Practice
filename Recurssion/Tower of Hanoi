@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class HelloWorld {
+    
+    public static void main(String[]args){
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int a =1;
+        int b=2;
+        int c= 3;
+        toh(n,a,b,c);
+
+    }
+    public static void toh(int n,int a,int b,int c){
+    if(n==0){
+        return;
+    }
+        toh(n-1,a,c,b);
+        System.out.println("move "+n+" from "+a+" to "+b+"\n");
+        toh (n-1,c,b,a);
+    }
+    }
+
